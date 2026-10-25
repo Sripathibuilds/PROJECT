@@ -1,0 +1,593 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --blue: #0145f2;
+  --white: #edf1f5;
+  --black: #291c0e;
+  --dd: #1637a0;
+  --sp: #c0f2f3;
+  --grey: #6e473b;
+  --fry: #a78d78;
+  --cream: #f3eee4;
+  --ivory: rgba(251, 249, 245, 0.62);
+  --taupe: #c4b8a0;
+  --taupe-deep: #948872;
+  --ink: #151413;
+  --ink1: #38332ba4;
+  --gold: #b8935a;
+  --gold-light: #dac6a6;
+  --line: rgba(43, 38, 32, 0.14);
+}
+body {
+  background-image: url(Screenshot\ 2026-07-13\ 220953.png);
+  scroll-snap-type: proximity;
+  flex-wrap: wrap;
+}
+.main-index {
+  background-color: transparent;
+  backdrop-filter: blur(20px);
+  color: var(--black);
+  padding: 20px;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  justify-content: space-between;
+}
+.h1 {
+  font-family: "Karla", sans-serif;
+  color: var(--black);
+
+  font-weight: lighter;
+}
+.box1 {
+  display: flex;
+  margin-top: 10px;
+}
+
+.para a {
+  text-decoration: none;
+  padding: 15px;
+  color: var(--black);
+  font-family: "Karla", sans-serif;
+  font-weight: 600;
+}
+.icon1 {
+  display: none;
+}
+
+.p {
+  margin-left: 90%;
+  color: #edf1f5;
+}
+.head {
+  font-family: "Karla", sans-serif;
+  padding-top: 100px;
+}
+.side-box {
+  background-color: black;
+  position: fixed;
+  width: 55%;
+  height: 100%;
+  gap: 10px;
+  left: -70%;
+  padding: 15px;
+  transition: 1s;
+  z-index: 3;
+}
+.side-para {
+  margin-top: 25px;
+}
+.side-para a {
+  text-decoration: none;
+  color: var(--white);
+  font-family: "karla", sans-serif;
+  padding: 20px;
+  font-weight: 600;
+}
+.side-para i {
+  padding: 5px;
+  margin: 5px;
+}
+.head-down span {
+  background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-emphasis:var(--white);
+
+  font-family: "Karla", sans-serif;
+  font-weight: bolder;
+}
+.head-down {
+  margin-right: 5px;
+  font-family: "popins", sans-serif;
+}
+.head-hold {
+  background-image: url(wp2.jpeg);
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 50px;
+ 
+  margin-bottom: 30px;
+}
+#imgpf{
+  background-color: #151413;
+  height: 100%;
+}
+
+
+
+.go {
+  margin-top: 180px;
+  padding-top: 250px;
+ position: relative;
+ bottom: 180px;
+ left: 200px;
+}
+
+.holy {
+  background-image: url(Screenshot\ 2026-07-13\ 220953.png);
+}
+.small-box {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 10px;
+  margin-top: 40px;
+}
+.one {
+  background-color: rgb(227, 216, 197);
+
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.h2 {
+  font-family: "karla", sans-serif;
+}
+.pol {
+  font-family: "popins", sans-serif;
+  padding-top: 10px;
+}
+.btn {
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  padding: 15px 25px 15px 25px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-family: "popins", sans-serif;
+  cursor: pointer;
+}
+.btn a{
+  text-decoration: none;
+  color: aliceblue;
+}
+.btn:hover{
+background-color: var(--gold);
+color: var(--white);
+}
+.Collections h5 {
+  font-family: "popins", sans-serif;
+  padding: 10px 20px 0px 20px;
+ margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: var(--ink);
+ text-decoration:wavy;
+  background-size: cover;
+  width: 50%;
+}
+.Collections h4 {
+  font-size: large;
+  padding: 25px 0 0px 15px;
+  font-family: "karla", sans-serif;
+  font-size: 27px;
+  font-weight: 600;
+  color: var(--ink1);
+}
+.Collections h4 span {
+  font-family: "karla", sans-serif;
+ color: var(--ink);
+  font-weight: 900;
+  
+  padding-left: 0%;
+}
+.Collections h2 span {
+  background: linear-gradient(130deg, var(--black)-10%, var(--grey) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#log {
+  background-color: var(--white);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+.nrv {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.boll {
+  position: relative;
+  flex-basis: 25%;
+}
+.btn1 {
+  position: absolute;
+  top: 60%;
+  left: 28%;
+  padding: 10px 20px 10px 20px;
+  background-color: var(--white);
+  color: var(--black);
+  border: 1px white;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  font-family: "karla", sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  cursor: pointer;
+}
+.img2 {
+  width: 160px;
+  height: 240px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 70px;
+  box-shadow:
+    rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.poke {
+  background-color: black;
+  position: absolute;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: none;
+}
+.colc {
+  background-color: rgb(23, 23, 23);
+  backdrop-filter: blur(100px);
+  width: 100%;
+  height: 30%;
+}
+.port h1 {
+  color: var(--white);
+  font-family: "karla", sans-serif;
+  font-weight: bolder;
+  padding: 20px 0 0 20px;
+}
+.port p {
+  margin-left: 20px;
+  color: var(--ivory);
+  font-weight: lighter;
+  font-family: "popins", sans-serif;
+}
+.colc p {
+  padding: 20px 20px 30px 0;
+}
+.search input {
+  width: 40%;
+  padding: 15px 10px 15px 20px;
+  margin: 10px 0 30px 0;
+  border-radius: 15px;
+  border: none;
+  font-family: "karla", sans-serif;
+  font-weight: bolder;
+}
+.search {
+  display: flex;
+  justify-content: center;
+}
+.ind {
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.ind a {
+  padding-right: 50px;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.coode {
+  background-image: url(log1.png);
+  color: #2e2720;
+  backdrop-filter: blur(1000px);
+  height: 600px;
+  width: 25%;
+  margin: 100px auto;
+}
+.div1 {
+  margin: 20px auto;
+  font-family: "Fraunces", serif;
+  color: black;
+  font-weight: 200;
+  opacity: 0.8;
+
+  margin-left: 70px;
+}
+.moll {
+  text-align: center;
+  padding: 30px;
+}
+.moll p {
+  margin: 15px;
+  color: var(--taupe-deep);
+}
+.div1 h4 {
+  font-weight: 200;
+  font-family: "fraunces", serif;
+}
+.coode h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 200;
+  font-size: 31px;
+}
+.void button {
+  border: none;
+  padding: 15px 100px 15px 100px;
+  display: flex;
+  background-color: var(--black);
+  color: white;
+  justify-content: center;
+  font-family: "fraunces", serif;
+  cursor: pointer;
+  position: fixed;
+  letter-spacing: 2px;
+  overflow: auto;
+  transition: letter-spacing 0.7s ease;
+}
+.void button:hover {
+  letter-spacing: 0.4em;
+  transition: 0.74s;
+}
+.void button::before {
+  content: "";
+  position: absolute;
+  transition: 0.7s;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    var(--gold),
+    var(--gold-light),
+    var(--gold)
+  );
+  transform: translateX(-100%);
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+.void button:hover::before {
+  transform: translateX(0%);
+}
+.void button span {
+  z-index: 2;
+}
+.void {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.div1 input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--line);
+  outline: none;
+  backdrop-filter: blur(1000);
+  padding: 5px;
+  transition: border-color 0.35s ease;
+
+  font-family: karla, sans-serif;
+  width: 75%;
+  color: #1637a0;
+  margin-top: 10px;
+}
+.div1 input:focus {
+  border-bottom-color: var(--gold);
+}
+.div1 ::placeholder {
+  color: gray;
+  padding: 10px;
+}
+.checkbtn {
+  display: flex;
+  justify-content: space-around;
+  font-size: smaller;
+}
+.checkbtn input[type="checkbox"] {
+  border: none;
+}
+.checkbtn p {
+  position: relative;
+  right: 50px;
+}
+.checkbtn a {
+  color: black;
+}
+.checkbtn a:hover {
+  color: var(--gold);
+}
+.cosd{
+  background-image: url(oppo.png);
+  background-size:cover;
+  width: 100%;
+  height: 200%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+.cosd h4{
+  font-family: "popins",sans-serif;
+  padding-left: 1050px ;
+  padding-top: 200px;
+  color: var(--black);
+  height: 20px;
+  font-size: larger;
+  font-weight: 100;
+  position: relative;
+  bottom: 50px;
+  
+}
+.holy h5{
+
+}
+
+@media screen and (max-width: 680px) {
+  .icon1 {
+    display: block;
+  }
+  .para a {
+    display: none;
+  }
+  .small-box {
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 30px;
+  }
+  .one {
+    flex-direction: column;
+  }
+  .img {
+    display: none;
+  }
+  .btn1 {
+    left: 27%;
+  }
+  .nrv {
+    justify-content: space-around;
+  }
+  .img2 {
+    margin-right: 30px;
+    margin-left: 20px;
+  }
+  .coode {
+    width: 30px;
+  }
+  .bold p{
+  display: none;
+}
+
+.head {
+  font-size: 20px;
+  position: relative;
+  bottom: 150%;
+  right: 25%;
+  
+}
+.btn{
+  position: relative;
+  bottom: 150%;
+  right: 25%;
+  padding: 12px;
+  font-size: 10px;
+}
+.head-down{
+  font-size: 15px;
+  position: relative;
+  bottom: 150%;
+  right: 25%;
+}
+}
+
+@media screen and (max-width: 400px) {
+  .img2 {
+    width: 100px;
+    height: 150px;
+    border-radius: 15px;
+  }
+  .btn1 {
+    padding: 5px 10px 5px 10px;
+    left: 24%;
+  }
+  .coode {
+    width: 50%;
+  }
+  .ind a {
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+  .ind {
+    justify-content: space-around;
+  }
+  .search input {
+    width: 60%;
+    padding: 10px;
+  }
+  .port h1 {
+    font-size: x-large;
+  }
+  .port p {
+    font-size: small;
+  }
+}
+@media screen and (max-width: 700px) {
+  .coode {
+    width: 50%;
+    background-image: url(Screenshot\ 2026-08-01\ 180847.png);
+  }
+  .div1 {
+    margin-left: 50px;
+  }
+  .checkbtn p {
+    position: relative;
+    right: 20px;
+  }
+  .void button {
+    padding: 15px 60px 15px 60px;
+  }
+  .cosd h4{
+    padding-top: 10%;
+    padding-left: 10%;
+    font-size: medium;   
+  }
+  .go{
+     margin-top: 100px;
+  padding-top:10px;
+ position: relative;
+ left: 0%;
+ 
+ 
+  }
+
+}
+@media screen and (max-width: 400px) {
+  .coode {
+    width: 80%;
+    background-image: url(Screenshot\ 2026-08-01\ 180847.png);
+  }
+  .div1 {
+    margin-left: 50px;
+  }
+  .checkbtn p {
+    position: relative;
+    right: 20px;
+  }
+  .void button {
+    padding: 15px 60px 15px 60px;
+  }
+  .port p span{
+    display: block;
+  }
+  .cosd h4{
+    padding-top: 0%;
+    
+  }
+}
